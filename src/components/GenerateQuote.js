@@ -22,7 +22,7 @@ const GenerateQuote = () => {
     }, [refresh])
 
     return (
-        <Stack spacing={10} height={500} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 20 }}>
+        <Stack spacing={10} height={550} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 20 }}>
             {
                 loading ? <CircularProgress size={50} color='primary' />
                     : <Typography variant='h3' color='#a394a6' textAlign='center'>{quote}</Typography>
