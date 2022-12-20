@@ -3,8 +3,8 @@ import { createTheme } from "@mui/material";
 export const darkTheme = createTheme({
     palette: {
         primary: {
-            main: "#fb8c00",
-            light: "#ffb74d"
+            main: "#881bd1",
+            light: "#b13dff"
         },
         secondary: {
             main: "#26231d",
@@ -14,11 +14,11 @@ export const darkTheme = createTheme({
             main: "#212121"
         },
         text: {
-            main: '#b6b4b4',
+            main: '#a394a6',
             input: 'white'
         },
         body: {
-            main: '#0e0b04'
+            main: '#090417'
         },
     }
 })

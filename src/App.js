@@ -1,12 +1,18 @@
-import './App.css';
+import { ThemeProvider } from '@mui/material';
+import NavBar from './components/NavBar';
+import { darkTheme } from './darkTheme';
 
 function App() {
+
+
+  document.body.style.backgroundColor = '#090417'
   return (
-    <div className="App">
-      <header className="App-header">
-        <code>hello</code>
-      </header>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <div className="App">
+          <NavBar />
+          <code>hello</code>
+      </div>
+    </ThemeProvider>
   );
 }
 
