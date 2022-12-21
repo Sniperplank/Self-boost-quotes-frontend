@@ -10,7 +10,7 @@ const About = () => {
     }
 
     return (
-        <Stack spacing={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 10, backgroundColor: '#10062e' }}>
+        <Stack className="about" id="about" spacing={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 10, backgroundColor: '#10062e' }}>
             <Typography variant='h3' color='#a394a6'>About Me</Typography>
             <Stack spacing={30} direction='row'>
                 <Box sx={{ backgroundColor: '#090417', width: 400, height: 200, borderRadius: 10, borderWidth: 2, borderColor: 'white', padding: 3 }}>
