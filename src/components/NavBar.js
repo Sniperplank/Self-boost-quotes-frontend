@@ -10,8 +10,8 @@ const NavBar = () => {
         <Typography variant='h5' color='primary'>Self Boost Quotes</Typography>
         <Stack direction='row' spacing={4}>
           <NavButton variant='text'>API</NavButton>
-          <NavButton variant='text'>Contact</NavButton>
           <NavButton variant='text'>About</NavButton>
+          <NavButton variant='text'>Contact</NavButton>
         </Stack>
       </StyledToolbar>
     </AppBar>

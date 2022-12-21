@@ -1,5 +1,7 @@
 import { ThemeProvider } from '@mui/material';
 import Api from './components/Api';
+import ApiWithId from './components/ApiWithId';
+import Contact from './components/Contact';
 import GenerateQuote from './components/GenerateQuote';
 import NavBar from './components/NavBar';
 import { darkTheme } from './darkTheme';
@@ -14,7 +16,8 @@ function App() {
         <NavBar />
         <GenerateQuote />
         <Api />
-        <code>hello</code>
+        <ApiWithId />
+        <Contact />
       </div>
     </ThemeProvider>
   );
