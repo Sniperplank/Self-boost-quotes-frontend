@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@mui/material';
+import About from './components/About';
 import Api from './components/Api';
 import ApiWithId from './components/ApiWithId';
 import Contact from './components/Contact';
@@ -17,6 +18,7 @@ function App() {
         <GenerateQuote />
         <Api />
         <ApiWithId />
+        <About />
         <Contact />
       </div>
     </ThemeProvider>
