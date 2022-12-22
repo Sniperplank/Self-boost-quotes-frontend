@@ -20,7 +20,7 @@ const AddQuote = () => {
 
     const submitQuote = async () => {
         try {
-            await axios.post('http://self-boost-quotes-api.vercel.app/add_quote', { quote: quote, password: password })
+            await axios.post('https://self-boost-quotes-api.vercel.app/add_quote', { quote: quote, password: password })
             setSuccess("Successfully added quote!")
             setErrors('')
             setQuote('')
