@@ -3,6 +3,7 @@ import React from 'react'
 import { NavButton } from '../styledComponents/NavButton'
 import { StyledToolbar } from '../styledComponents/StyledToolBar'
 import { HashLink } from 'react-router-hash-link';
+import '../App.css'
 
 const NavBar = () => {
   const scrollWithOffset = (el, offset) => {
@@ -14,7 +15,7 @@ const NavBar = () => {
     })
   };
   return (
-    <AppBar component='nav' position='sticky'>
+    <AppBar className='navbar' component='nav' position='sticky'>
       <StyledToolbar>
         <Typography component={HashLink} smooth to='#main' scroll={el => scrollWithOffset(el, 100)} variant='h5' color='primary' sx={{ textDecoration: 'none' }}>Self Boost Quotes</Typography>
         <Stack direction='row' spacing={4}>

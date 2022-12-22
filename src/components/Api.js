@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { StyledButton } from '../styledComponents/StyledButton'
 import OpenInNewIcon from '@mui/icons-material/OpenInNew'
+import '../App.css'
 
 const Api = () => {
     const openInNewTab = (url) => {
@@ -11,9 +12,9 @@ const Api = () => {
 
     return (
         <Stack className="api" id="api" spacing={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 10, backgroundColor: '#10062e' }}>
-            <Typography variant='h3' color='#a394a6'>Using the API</Typography>
-            <Stack spacing={30} direction='row'>
-                <Box sx={{ backgroundColor: '#090417', width: 400, height: 200, borderRadius: 10, borderWidth: 2, borderColor: 'white', padding: 3 }}>
+            <Typography className='sectionTitle' variant='h3' color='#a394a6'>Using the API</Typography>
+            <Stack spacing={{ xs: 10, md: 30 }} direction={{ xs: 'column', md: 'row' }}>
+                <Box sx={{ backgroundColor: '#090417', width: { xs: '80%', md: 400 }, height: 200, borderRadius: 10, borderWidth: 2, borderColor: 'white', padding: 3 }}>
                     <Stack spacing={1} sx={{ color: '#881bd1' }}>
                         <code>{"{"}</code>
                         <Stack spacing={1} sx={{ paddingLeft: 2 }}>

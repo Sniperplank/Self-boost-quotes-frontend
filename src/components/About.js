@@ -2,6 +2,7 @@ import React from 'react'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Box, Stack, Typography } from '@mui/material';
 import { StyledButton } from '../styledComponents/StyledButton';
+import '../App.css'
 
 const About = () => {
     const openInNewTab = (url) => {
@@ -11,9 +12,9 @@ const About = () => {
 
     return (
         <Stack className="about" id="about" spacing={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 10, backgroundColor: '#10062e' }}>
-            <Typography variant='h3' color='#a394a6'>About Me</Typography>
-            <Stack spacing={30} direction='row'>
-                <Box sx={{ backgroundColor: '#090417', width: 400, height: 200, borderRadius: 10, borderWidth: 2, borderColor: 'white', padding: 3 }}>
+            <Typography className='sectionTitle' variant='h3' color='#a394a6'>About Me</Typography>
+            <Stack spacing={{ xs: 10, md: 30 }} direction={{ xs: 'column', md: 'row' }}>
+                <Box sx={{ backgroundColor: '#090417', width: { xs: '80%', md: 400 }, height: 200, borderRadius: 10, borderWidth: 2, borderColor: 'white', padding: 3 }}>
                     <Stack spacing={1} sx={{ color: '#881bd1' }}>
                         <code>{"{"}</code>
                         <Stack spacing={1} sx={{ paddingLeft: 2 }}>
