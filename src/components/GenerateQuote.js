@@ -26,7 +26,7 @@ const GenerateQuote = () => {
         <Stack className='main' id='main' spacing={10} height={550} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: { xs: 5, md: 20 } }}>
             {
                 loading ? <CircularProgress size={50} color='primary' />
-                    : <Typography className='quote' sx={{ typography: { xs: 'h5', md: 'h3' } }} color='#a394a6' textAlign='center'>{quote}</Typography>
+                    : <Typography className='quote' sx={{ typography: { xs: 'h5', md: 'h3' } }} color='text.main' textAlign='center'>{quote}</Typography>
             }
             <StyledButton onClick={regenerateQuote} variant='contained' color='primary'>Regenerate Quote</StyledButton>
         </Stack>

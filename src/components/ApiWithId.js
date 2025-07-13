@@ -11,10 +11,10 @@ const ApiWithId = () => {
 
     return (
         <Stack spacing={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 10 }}>
-            <Typography className='sectionTitle' variant='h3' color='#a394a6'>Using Quote ID</Typography>
+            <Typography className='sectionTitle' variant='h3' color='text.main'>Using Quote ID</Typography>
             <Stack spacing={{ xs: 10, md: 30 }} direction={{ xs: 'column', md: 'row' }}>
                 <Stack spacing={5}>
-                    <Typography variant='body1' color='#a394a6' maxWidth={400}>You can specify the id of the quote and always get the right quote for the id. Just change the id number in the URL to the desired id.</Typography>
+                    <Typography variant='body1' color='text.main' maxWidth={400}>You can specify the id of the quote and always get the right quote for the id. Just change the id number in the URL to the desired id.</Typography>
                     <Typography variant='body1' color='primary' sx={{ textDecoration: 'underline' }}>https://self-boost-quotes-api.vercel.app?id=14</Typography>
                     <StyledButton onClick={() => openInNewTab('https://self-boost-quotes-api.vercel.app?id=14')} endIcon={<OpenInNewIcon />} variant='contained' color='primary'>Try it</StyledButton>
                 </Stack>

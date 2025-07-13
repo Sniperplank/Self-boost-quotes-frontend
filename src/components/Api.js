@@ -12,7 +12,7 @@ const Api = () => {
 
     return (
         <Stack className="api" id="api" spacing={10} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 10, backgroundColor: '#10062e' }}>
-            <Typography className='sectionTitle' variant='h3' color='#a394a6'>Using the API</Typography>
+            <Typography className='sectionTitle' variant='h3' color='text.main'>Using the API</Typography>
             <Stack spacing={{ xs: 10, md: 30 }} direction={{ xs: 'column', md: 'row' }}>
                 <Box sx={{ backgroundColor: '#090417', width: { xs: '80%', md: 400 }, height: 200, borderRadius: 10, borderWidth: 2, borderColor: 'white', padding: 3 }}>
                     <Stack spacing={1} sx={{ color: '#881bd1' }}>
@@ -25,7 +25,7 @@ const Api = () => {
                     </Stack>
                 </Box>
                 <Stack spacing={5}>
-                    <Typography variant='body1' color='#a394a6' maxWidth={400}>The API will return two properties, id and message. Message is the random quote that is being returned and the id is unique to that quote.</Typography>
+                    <Typography variant='body1' color='text.main' maxWidth={400}>The API will return two properties, id and message. Message is the random quote that is being returned and the id is unique to that quote.</Typography>
                     <Typography variant='body1' color='primary' sx={{ textDecoration: 'underline' }}>https://self-boost-quotes-api.vercel.app/</Typography>
                     <StyledButton onClick={() => openInNewTab('https://self-boost-quotes-api.vercel.app/')} endIcon={<OpenInNewIcon />} variant='contained' color='primary'>Try it</StyledButton>
                 </Stack>
