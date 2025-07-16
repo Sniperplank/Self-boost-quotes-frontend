@@ -15,7 +15,7 @@ const Contact = () => {
             <Typography className='sectionTitle' variant='h3' color='text.main'>Contact Me</Typography>
             <Stack spacing={5} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <Typography variant='body1' color='text.main' maxWidth={400} textAlign='center'>If you are having any problems or you run into any bugs with the API, send me a message through my website and let me know what the problem is.</Typography>
-                <StyledButton onClick={() => openInNewTab('https://eilafaljundi.com/Pages/Contact.html')} endIcon={<OpenInNewIcon />} variant='contained' color='primary'>Message Me</StyledButton>
+                <StyledButton onClick={() => openInNewTab('https://sniperplank.github.io/ContactMe/')} endIcon={<OpenInNewIcon />} variant='contained' color='primary'>Message Me</StyledButton>
             </Stack>
         </Stack>
     )
